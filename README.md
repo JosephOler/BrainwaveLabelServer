@@ -1,12 +1,12 @@
-Pre-processing from "extractBrainSignalsSample.py", must reference folder with data in format "S00-Name-flavor"
+Pre-processing from "extractBrainSignalsSample.py", must reference raw data folder with data in format "S00-Name-flavor", and must be in same directory as "brain_signal_similarity.py"
 
-Model generated using evaluateML.py, includes export command, and MUST USE pre-processed data file. 
+Model generated using evaluateML.py, includes export command, PCA, Randomforest, and MUST USE pre-processed data file. 
 
-In this case it is trained using "mixed_data.csv", which contains sugar and melon from independent trials and salt, water, lemon from mixed trials. 
+There are two models present: 
+    "RF_classifier.jotlib" is trained using the processed "solo_data.csv" and only uses sugar and melon trials, which were performed independently. (Doesn't report to the server well)
+    "RF_all_classifier.jotlib" is trained using the processed "mixed_data.csv" which contains sugar and melon from independent trials AND salt, water, lemon from mixed trials. 
 
-Model exported as RF_all_classifier.jotlib
-
-Make sure "brain_signal_similarity.py" and "RF_all_classifier.jotlib" are in the same directory as "server.py"
+Make sure "brain_signal_similarity.py" and classifier are in the same directory as "server.py"
 
 HTML template is "template.html" make sure it is in a separate folder labelled "templates" located within the same directory as "server.py"
 
