@@ -14,7 +14,7 @@ HTML template is "template.html" make sure it is in a separate folder labelled "
 
 Server.py calls "RF_classifier.jotlib"
 
-1) Run server.py
-2) Upload any signal file, click submit.
-3) File is processed within server.py, top features are extracted, classified, and returned via server.
-4) profit
+1) Run server.py with "S03-Jordan-sugar.csv"
+3) Upload any signal file, click submit.
+4) File is processed within server.py, top features are extracted, classified, and returned via server.
+5) profit
