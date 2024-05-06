@@ -4,5 +4,8 @@ Model exported as RF_classifier.jotlib
 
 Make sure "brain_signal_similarity.py" and "RF_classifier.jotlib" are in the same directory as "server.py"
 
+HTML template is "template.html" make sure it is in a separate folder labelled "templates" located within the same directory
+
 1) Run server.py
 2) Upload any signal file and click submit
+3) profit
