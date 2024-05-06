@@ -8,7 +8,7 @@ I trained two models, unable to upload second it is too large, email me and I'll
 
 
 
-Make sure "brain_signal_similarity.py" and classifier are in the same directory as "server.py"
+Make sure "brain_signal_similarity.py" and "RF_classifier.jotlib" are in the same directory as "server.py"
 
 HTML template is "template.html" make sure it is in a separate folder labelled "templates" located within the same directory as "server.py"
 
