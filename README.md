@@ -1,4 +1,4 @@
-Model generated using evaluateML.py, includes export command, and uses pre-processed file "solo_data.csv" which contains only sugar and melon testing during independent trials.
+Model generated using evaluateML.py, includes export command, and MUST USE pre-processed data file. In this case it uses "solo_data.csv", which contains only sugar and melon testing during independent trials.
 
 Model exported as RF_classifier.jotlib
 
