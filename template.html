@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload and Display Prediction Result</title>
+</head>
+
+<body>
+    <h1>Upload a CSV File</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".csv" required>
+        <input type="submit" value="Upload">
+    </form>
+    {% if filename %}
+    <h2>Uploaded File: {{ filename }}</h2>
+    {% endif %}
+    {% if predicted_labels %}
+    <h2>Prediction Results</h2>
+    <ul>
+        {% for label in predicted_labels %}
+        <li>Predicted Label: {{ label }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+</body>
+
+</html>
